@@ -24,6 +24,20 @@ const configureMiddleware = app => {
         credentials: true,
       })
     );
+  } else {
+    const whitelist = ['https://fuse.netlify.com'];
+
+    app.use(
+      cors({
+        origin: (origin, callback) => {
+          if (whitelist.includes(origin)) {
+            callback(null, true);
+          } else {
+            callback(new Error('This origin is not allowed. Begone!'));
+          }
+        },
+      })
+    );
   }
 
   app.use(bodyParser.json());
