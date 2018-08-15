@@ -36,6 +36,7 @@ const configureMiddleware = app => {
             callback(new Error('This origin is not allowed. Begone!'));
           }
         },
+        credentials: true,
       })
     );
   }
