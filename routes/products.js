@@ -18,6 +18,7 @@ const createRoutes = router => {
         'numShots',
         'casePacking',
         'effects',
+        'count',
       ])
       .then(products => res.json(products));
   });
