@@ -49,31 +49,6 @@ const ZIP_CODES_WE_DELIVER_TO = [
   '50240', // Saint Charles
   '50243', // Sheldahl
   '50250', // Stuart
-  '50257', // Truro
-  '50261', // Van Meter
-  '50263', // Waukee
-  '50265', // West Des Moines
-  '50266', // West Des Moines
-  '50273', // Winterset
-  '50276', // Woodward
-  '50277', // Yale
-  '50309', // Des Moines
-  '50310', // Des Moines
-  '50311', // Des Moines
-  '50312', // Des Moines
-  '50313', // Des Moines
-  '50314', // Des Moines
-  '50315', // Des Moines
-  '50316', // Des Moines
-  '50317', // Des Moines
-  '50319', // State Of Iowa
-  '50320', // Des Moines
-  '50321', // Des Moines
-  '50322', // Urbandale
-  '50323', // Urbandale
-  '50324', // Windsor Heights
-  '50325', // Clive
-  '50327', // Pleasant Hill
 ];
 
 const canDeliverToZipCode = zipCode =>

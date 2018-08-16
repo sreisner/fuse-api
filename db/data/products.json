@@ -16,7 +16,7 @@
     "numShots": 220,
     "casePacking": 2,
     "effects": ["crackling", "stars"],
-    "count": 10
+    "numInStock": 10
   },
   {
     "_id": 2,
@@ -35,7 +35,7 @@
     "numShots": 30,
     "casePacking": 2,
     "effects": ["dahlia", "glitter", "brocade", "crackling", "willow"],
-    "count": 10
+    "numInStock": 10
   },
   {
     "_id": 3,
@@ -54,7 +54,7 @@
     "numShots": 22,
     "casePacking": 2,
     "effects": ["peonies", "brocade", "crackling", "palm", "brocade crown"],
-    "count": 10
+    "numInStock": 10
   },
   {
     "_id": 4,
@@ -73,7 +73,7 @@
     "numShots": 20,
     "casePacking": 4,
     "effects": ["waterfall"],
-    "count": 10
+    "numInStock": 10
   },
   {
     "_id": 5,
@@ -92,6 +92,6 @@
     "numShots": 9,
     "casePacking": 2,
     "effects": ["tails", "peonies", "glitter", "pistil", "crackling"],
-    "count": 10
+    "numInStock": 10
   }
 ]
