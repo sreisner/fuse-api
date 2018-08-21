@@ -1,3 +1,4 @@
+const uuid = require('uuid/v4');
 const Order = require('../db/models/order');
 const Product = require('../db/models/product');
 
@@ -7,6 +8,12 @@ const stripe =
   process.env.NODE_ENV === 'production'
     ? require('stripe')(process.env.STRIPE_PRODUCTION_KEY)
     : require('stripe')(process.env.STRIPE_TEST_KEY);
+
+const Square = require('square-connect');
+const squareClient = Square.ApiClient.instance;
+
+const oauth2 = squareClient.authentications.oauth2;
+oauth2.accessToken = process.env.SQUARE_SANDBOX_ACCESS_TOKEN;
 
 const VALID_EMAIL_REGEX = /\S+@\S+/;
 
@@ -89,7 +96,7 @@ const validateProductData = async (req, res, next) => {
   } else if (!(await validateProductsInStock(productData))) {
     sendClientSideErrorResponse(
       res,
-      'The number of items in our inventory is less than the number of requested items for one or more products.'
+      "We're currently out of stock for one or more requested products."
     );
   } else {
     next();
@@ -106,7 +113,7 @@ const validateAmountToCharge = async (req, res, next) => {
       p => p._id === requestedProduct._id
     );
 
-    return sum + inventoryProduct.retailPrice * requestedProduct.count;
+    return sum + inventoryProduct.retailPrice * requestedProduct.numItemsInCart;
   }, 0);
 
   if (actualAmountToCharge !== amountToCharge) {
@@ -142,9 +149,48 @@ const createNewOrderRecord = async (userData, productData, amountCharged) => {
 const updateProductCounts = async productData => {
   for (const boughtProduct of productData) {
     const inventoryProduct = await Product.findById(boughtProduct._id);
-    inventoryProduct.count -= boughtProduct.count;
+    inventoryProduct.numInStock -= boughtProduct.count;
     await inventoryProduct.save();
   }
+};
+
+const createLineItems = async productData => {
+  const lineItems = [];
+
+  for (const requestedProduct of productData) {
+    const product = await Product.findById(requestedProduct._id);
+
+    const price = new Square.Money();
+    money.setAmount(product.retailPrice);
+    money.setCurrency('USD');
+
+    const lineItem = new Square.CreateOrderRequestLineItem();
+    lineItem.setName(product.title);
+    lineItem.setQuantity(requestedProduct.count);
+    lineItem.setBasePriceMoney(price);
+
+    lineItems.push(lineItem);
+  }
+
+  return lineItems;
+};
+
+const createOrder = lineItems => {
+  const idempotencyKey = uuid();
+  const order = new Square.CreateOrderRequest();
+  order.setLineItems(lineItems);
+  order.setIdempotencyKey(idempotencyKey);
+
+  return order;
+};
+
+const createCheckoutRequest = order => {
+  const checkoutRequest = new Square.CreateCheckoutRequest();
+  checkoutRequest.setIdempotencyKey(uuid());
+  checkoutRequest.setOrder(order);
+  checkoutRequest.setRedirectUrl('http://localhost:3000');
+
+  return checkoutRequest;
 };
 
 const createRoutes = router => {
@@ -155,16 +201,16 @@ const createRoutes = router => {
       validateProductData,
       validateAmountToCharge,
       async (req, res) => {
-        const { token, userData, productData, amountToCharge } = req.body;
+        const { userData, productData } = req.body;
 
-        let charge;
-        try {
-          charge = await chargeCard(token, amountToCharge, userData);
-        } catch (err) {
-          return res.status(500).send({
-            message: err.message,
-          });
-        }
+        const lineItems = createLineItems(productData);
+        const order = createOrder(lineItems);
+        const checkoutRequest = createCheckoutRequest(order);
+        const client = new Square.Checkout();
+        const response = await client.createCheckout(
+          process.env.SQUARE_SANDBOX_DSM_LOCATION_ID,
+          checkoutRequest
+        );
 
         try {
           await createNewOrderRecord(userData, productData, charge.amount);
@@ -178,7 +224,7 @@ const createRoutes = router => {
           console.error(err);
         }
 
-        res.status(204).end();
+        res.redirect(response.getCheckoutPageUrl());
       }
     );
 };
