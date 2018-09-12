@@ -2,65 +2,16 @@ const uuid = require('uuid/v4');
 const Order = require('../db/models/order');
 const Product = require('../db/models/product');
 
-const { canDeliverToZipCode } = require('./utils');
-
-const stripe =
-  process.env.NODE_ENV === 'production'
-    ? require('stripe')(process.env.STRIPE_PRODUCTION_KEY)
-    : require('stripe')(process.env.STRIPE_TEST_KEY);
-
 const Square = require('square-connect');
 const squareClient = Square.ApiClient.instance;
 
 const oauth2 = squareClient.authentications.oauth2;
 oauth2.accessToken = process.env.SQUARE_SANDBOX_ACCESS_TOKEN;
 
-const VALID_EMAIL_REGEX = /\S+@\S+/;
-
 const sendClientSideErrorResponse = (res, message) => {
   res.status(400).send({
     message,
   });
-};
-
-const validateName = userData => {
-  return userData.firstName && userData.lastName;
-};
-
-const validateEmailAddress = userData => {
-  return userData.email && VALID_EMAIL_REGEX.test(userData.email);
-};
-
-const validateDeliveryAddress = userData => {
-  return userData.street && userData.city && userData.state && userData.zip;
-};
-
-const validateCanDeliverToZipCode = zip => {
-  return canDeliverToZipCode(zip);
-};
-
-const validateUserData = (req, res, next) => {
-  const { userData } = req.body;
-
-  if (!userData) {
-    sendClientSideErrorResponse(res, 'Missing user data in request.');
-  } else if (!validateName(userData)) {
-    sendClientSideErrorResponse(res, 'You must submit a first and last name.');
-  } else if (!validateEmailAddress(userData)) {
-    sendClientSideErrorResponse(res, 'You must submit a valid email address.');
-  } else if (!validateDeliveryAddress(userData)) {
-    sendClientSideErrorResponse(
-      res,
-      'You must submit a valid street address for delivery.'
-    );
-  } else if (!validateCanDeliverToZipCode(userData.zip)) {
-    sendClientSideErrorResponse(
-      res,
-      `We do not currently deliver to given zip code: ${userData.zip}`
-    );
-  } else {
-    next();
-  }
 };
 
 const validateProductsInStock = async productData => {
@@ -126,34 +77,6 @@ const validateAmountToCharge = async (req, res, next) => {
   }
 };
 
-const chargeCard = async (token, amountToCharge, userData) => {
-  return await stripe.charges.create({
-    amount: amountToCharge,
-    currency: 'usd',
-    source: token,
-    description: `Charge for ${userData.firstName} ${userData.lastName}`,
-  });
-};
-
-const createNewOrderRecord = async (userData, productData, amountCharged) => {
-  const newOrder = new Order({
-    ...userData,
-    products: productData,
-    amountCharged: amountCharged,
-    status: 'Pending Delivery',
-  });
-
-  return await newOrder.save();
-};
-
-const updateProductCounts = async productData => {
-  for (const boughtProduct of productData) {
-    const inventoryProduct = await Product.findById(boughtProduct._id);
-    inventoryProduct.numInStock -= boughtProduct.count;
-    await inventoryProduct.save();
-  }
-};
-
 const createLineItems = async productData => {
   const lineItems = [];
 
@@ -194,12 +117,10 @@ const createCheckoutRequest = order => {
 };
 
 const createRoutes = router => {
-  router.route('/checkout').post(
-    // validateUserData,
-    // validateProductData,
-    // validateAmountToCharge,
-    async (req, res) => {
-      const { userData, productData } = req.body;
+  router
+    .route('/checkout')
+    .post(validateProductData, validateAmountToCharge, async (req, res) => {
+      const { productData } = req.body;
 
       const lineItems = await createLineItems(productData);
       const order = createOrder(lineItems);
@@ -213,8 +134,7 @@ const createRoutes = router => {
       res
         .status(200)
         .send({ checkoutUrl: response.checkout.checkout_page_url });
-    }
-  );
+    });
 };
 
 module.exports = {
