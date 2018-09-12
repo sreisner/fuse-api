@@ -160,14 +160,14 @@ const createLineItems = async productData => {
   for (const requestedProduct of productData) {
     const product = await Product.findById(requestedProduct._id);
 
-    const price = new Square.Money();
-    money.setAmount(product.retailPrice);
-    money.setCurrency('USD');
+    const money = new Square.Money();
+    money.amount = product.retailPrice;
+    money.currency = 'USD';
 
     const lineItem = new Square.CreateOrderRequestLineItem();
-    lineItem.setName(product.title);
-    lineItem.setQuantity(requestedProduct.count);
-    lineItem.setBasePriceMoney(price);
+    lineItem.name = product.title;
+    lineItem.quantity = `${requestedProduct.numItemsInCart}`;
+    lineItem.base_price_money = money;
 
     lineItems.push(lineItem);
   }
@@ -178,55 +178,43 @@ const createLineItems = async productData => {
 const createOrder = lineItems => {
   const idempotencyKey = uuid();
   const order = new Square.CreateOrderRequest();
-  order.setLineItems(lineItems);
-  order.setIdempotencyKey(idempotencyKey);
+  order.line_items = lineItems;
+  order.idempotency_key = idempotencyKey;
 
   return order;
 };
 
 const createCheckoutRequest = order => {
   const checkoutRequest = new Square.CreateCheckoutRequest();
-  checkoutRequest.setIdempotencyKey(uuid());
-  checkoutRequest.setOrder(order);
-  checkoutRequest.setRedirectUrl('http://localhost:3000');
+  checkoutRequest.idempotency_key = uuid();
+  checkoutRequest.order = order;
+  checkoutRequest.redirect_url = 'http://localhost:3000';
 
   return checkoutRequest;
 };
 
 const createRoutes = router => {
-  router
-    .route('/checkout')
-    .post(
-      validateUserData,
-      validateProductData,
-      validateAmountToCharge,
-      async (req, res) => {
-        const { userData, productData } = req.body;
+  router.route('/checkout').post(
+    // validateUserData,
+    // validateProductData,
+    // validateAmountToCharge,
+    async (req, res) => {
+      const { userData, productData } = req.body;
 
-        const lineItems = createLineItems(productData);
-        const order = createOrder(lineItems);
-        const checkoutRequest = createCheckoutRequest(order);
-        const client = new Square.Checkout();
-        const response = await client.createCheckout(
-          process.env.SQUARE_SANDBOX_DSM_LOCATION_ID,
-          checkoutRequest
-        );
+      const lineItems = await createLineItems(productData);
+      const order = createOrder(lineItems);
+      const checkoutRequest = createCheckoutRequest(order);
+      const checkoutClient = new Square.CheckoutApi(squareClient);
+      const response = await checkoutClient.createCheckout(
+        process.env.SQUARE_SANDBOX_DSM_LOCATION_ID,
+        checkoutRequest
+      );
 
-        try {
-          await createNewOrderRecord(userData, productData, charge.amount);
-          if (process.env.NODE_ENV === 'production') {
-            await updateProductCounts(productData);
-          }
-        } catch (err) {
-          // TODO:  Return successfully since their card was charged, but
-          // indicate in an email to the developers that something went
-          // wrong saving data to the database
-          console.error(err);
-        }
-
-        res.redirect(response.getCheckoutPageUrl());
-      }
-    );
+      res
+        .status(200)
+        .send({ checkoutUrl: response.checkout.checkout_page_url });
+    }
+  );
 };
 
 module.exports = {
