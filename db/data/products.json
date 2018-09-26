@@ -2,7 +2,7 @@
   {
     "_id": 1,
     "categoryId": 1,
-    "title": "Mission Control Reloadable Girandola",
+    "title": "500g Repeater #1",
     "description": "With a hairraising scream, these wheels jet up into the sky and end their flight with assorted effects. Astounding!",
     "price": 1399,
     "numInStock": 6,
@@ -26,7 +26,27 @@
   {
     "_id": 2,
     "categoryId": 1,
-    "title": "Mission Control Reloadable Girandola",
+    "title": "500g Repeater #2",
+    "description": "With a hairraising scream, these wheels jet up into the sky and end their flight with assorted effects. Astounding!",
+    "price": 1399,
+    "numInStock": 6,
+    "images": [
+      {
+        "src": "http://static1.squarespace.com/static/5941c1e9d482e9324064f98f/594290f230454416d6a4a1bf/594290f230454416d6a4a1c4/1497535176388/MISSION-CONTROL_large.jpg?format=1000w",
+        "alt": ""
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=YVlMCRQn_XI",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 10
+  },
+  {
+    "_id": 3,
+    "categoryId": 2,
+    "title": "200g Repeater #1",
     "description": "With a hairraising scream, these wheels jet up into the sky and end their flight with assorted effects. Astounding!",
     "price": 1399,
     "numInStock": 6,

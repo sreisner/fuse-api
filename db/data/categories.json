@@ -3,5 +3,10 @@
     "_id": 1,
     "singularName": "500 Gram Repeater",
     "pluralName": "500 Gram Repeaters"
+  },
+  {
+    "_id": 2,
+    "singularName": "200 Gram Repeater",
+    "pluralName": "200 Gram Repeaters"
   }
 ]
