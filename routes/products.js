@@ -5,20 +5,18 @@ const createRoutes = router => {
     Product.find()
       .select([
         '_id',
-        'title',
         'categoryId',
+        'title',
         'description',
-        'imageUrls',
-        'duration',
-        'retailPrice',
-        'manufacturer',
-        'colors',
-        'videoUrl',
-        'type',
-        'numShots',
-        'casePacking',
-        'effects',
+        'price',
         'numInStock',
+        'images',
+        'videoUrl',
+        'manufacturer',
+        'duration',
+        'colors',
+        'effects',
+        'numShots',
       ])
       .then(products => res.json(products));
   });
