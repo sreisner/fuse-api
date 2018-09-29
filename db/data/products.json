@@ -1,97 +1,1388 @@
 [
   {
     "_id": 1,
-    "title": "High Stepper",
     "categoryId": 2,
+    "title": "Mission Control Reloadable Girandola",
     "description":
-      "Step cake with shots fanning left to right and back again. Red & green pearls and crackling effects with loud reports. 220 shots in about 25 seconds! (Rapid Fire)",
-    "imageUrls": ["https://wfboom.com/images/products/12033.png"],
-    "duration": 25,
-    "retailPrice": 23500,
-    "casePrice": 13999,
-    "manufacturer": "AFW",
-    "colors": ["red", "green", "gold"],
-    "videoUrl": "http://wfboom.com/images/movies/HighStepper17.mp4",
-    "type": "Z-Cake",
-    "numShots": 220,
-    "casePacking": 2,
-    "effects": ["crackling", "stars"],
-    "numInStock": 10
+    "With a hairraising scream,these wheels jet up into the sky and end their flight with assorted effects. Astounding!",
+    "price": 1399,
+    "numInStock": 6,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490792/Fireworks/MISSION-CONTROL_large.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=YVlMCRQn_XI",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 60,
+    "colors": ["gold"],
+    "effects": ["chrysanthemum"],
+    "numShots": 6
   },
   {
     "_id": 2,
-    "title": "Fantastic",
     "categoryId": 2,
+    "title": "The Mothership Giant Girandola",
     "description":
-      "Fan shaped 500 gram repeater with; 1st Row: Aqua blue with lemon dahlia; 2nd Row: Brocade with red glitter; 3rd Row: Brocade with crackling flower; 4th Row: Aqua blue to red glitter; 5th Row: Aqua blue with lemon dahlia and red glitter; 6th Row: Red and green crackling willow.",
-    "imageUrls": ["https://wfboom.com/images/products/12189.png"],
-    "duration": 30,
-    "retailPrice": 11000,
-    "casePrice": 6669,
-    "manufacturer": "Firehawk",
-    "colors": ["aqua blue", "lemon", "gold", "red", "green"],
-    "videoUrl": "http://www.wfboom.com/images/movies/Fantasticlg.mp4",
-    "type": "Angled",
-    "numShots": 30,
-    "casePacking": 2,
-    "effects": ["dahlia", "glitter", "brocade", "crackling", "willow"],
-    "numInStock": 10
+    "Four shots bang the night sky then a magical flying wheel screams as it launches into the atmosphere in a whirlwind of sparks. It concludes its flight with a multicolored break finale. If it flew any higher, it would be lost in orbit!",
+    "price": 1614,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490791/Fireworks/THE-MOTHERSHIP_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=txPwSj9zT3U",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 50,
+    "colors": ["green", "red"],
+    "effects": ["comet", "pistil"],
+    "numShots": 4
   },
   {
     "_id": 3,
-    "title": "Fireworks Factory",
-    "categoryId": 2,
+    "categoryId": 1,
+    "title": "American Graffiti",
     "description":
-      "Starts with three 2\" shots of red, white and blue peonies; Then sixteen shots of brocade to red; Red to crackling palm; Brocade to green; Green to crackling palm; Quickened final three 2\" shots of brocade crowns.",
-    "imageUrls": ["https://wfboom.com/images/products/12186.png"],
-    "duration": 48,
-    "retailPrice": 12500,
-    "casePrice": 7999,
-    "manufacturer": "AFW",
-    "colors": ["red", "white", "blue", "green", "gold"],
-    "videoUrl": "http://wfboom.com/images/movies/FireworksFactory17.mp4",
-    "type": "Straight Fire",
-    "numShots": 22,
-    "casePacking": 2,
-    "effects": ["peonies", "brocade", "crackling", "palm", "brocade crown"],
-    "numInStock": 10
+    "An unbelievable finale cake with great patterns and very unique effects.",
+    "price": 4548,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490790/Fireworks/American-Graffiti_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=YrjYJJzfzi0",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green", "blue", "gold"],
+    "effects": ["pearls", "comet"],
+    "numShots": 228
   },
   {
     "_id": 4,
-    "title": "Cascade",
-    "categoryId": 2,
+    "categoryId": 1,
+    "title": "American Strong",
     "description":
-      "500 gram repeater with awesome waterfall effects ending with extra large golden stars. Shoots four shots at a time.",
-    "imageUrls": ["https://wfboom.com/images/products/12085.png"],
-    "duration": 21,
-    "retailPrice": 7500,
-    "casePrice": 9132,
-    "manufacturer": "AFW",
-    "colors": ["gold"],
-    "videoUrl": "http://wfboom.com/images/movies/Cascadelg.mp4",
-    "type": "Straight Fire",
-    "numShots": 20,
-    "casePacking": 4,
-    "effects": ["waterfall"],
-    "numInStock": 10
+    "This 12-shot rack provides you with giant peonies of red, blue, and strobes. You don't want to miss this patriotic cake!",
+    "price": 1999,
+    "numInStock": 10,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490790/Fireworks/AMERICAN-STRONG_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=8yptkMAzxM0",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 35,
+    "colors": ["red", "white", "blue"],
+    "effects": ["peony"],
+    "numShots": 12
   },
   {
     "_id": 5,
-    "title": "Victory March",
-    "categoryId": 2,
+    "categoryId": 1,
+    "title": "Buck Fever",
     "description":
-      "Red tail to blue peony with white glitter pistil; Silver tail to red peony with blue pistil; Blue tail to silver peony with red pistil; Red, white and blue peony with crackling pistil (Final three shots).",
-    "imageUrls": ["https://wfboom.com/images/products/12128.png"],
-    "duration": 37,
-    "retailPrice": 13000,
-    "casePrice": 7999,
-    "manufacturer": "AFW",
-    "colors": ["red", "white", "blue", "silver", "gold"],
-    "videoUrl": "http://wfboom.com/images/movies/VictoryMarch17.mp4",
-    "type": "Straight Fire",
-    "numShots": 9,
-    "casePacking": 2,
-    "effects": ["tails", "peonies", "glitter", "pistil", "crackling"],
-    "numInStock": 10
+    "Exciting huge explosions of color with time rain and glitter, ending in a grand finale of crackling willows!",
+    "price": 1371,
+    "numInStock": 14,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490790/Fireworks/Buck-Fever_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=n9MIQEvRuj4",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green", "white", "purple"],
+    "effects": ["coconut", "glitter", "time rain", "willow"],
+    "numShots": 16
+  },
+  {
+    "_id": 6,
+    "categoryId": 1,
+    "title": "China Town",
+    "description":
+    "9 large shots of explosively dazzling color!",
+    "price": 1796,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490788/Fireworks/China-Town_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vB6_9Ib1APo",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green", "blue"],
+    "effects": ["pistil", "palm", "brocade"],
+    "numShots": 9
+  },
+  {
+    "_id": 7,
+    "categoryId": 1,
+    "title": "Cold Fusion",
+    "description":
+    "A very new and unique spider effect followed down by a colorful pistil. Extremely powerful breaks!",
+    "price": 2249,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490788/Fireworks/Cold-Fusion_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=bA2lwrhkGhQ",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["gold", "red"],
+    "effects": ["spider", "pistil"],
+    "numShots": 7
+  },
+  {
+    "_id": 8,
+    "categoryId": 1,
+    "title": "Commander & Chief",
+    "description":
+    "A spectacular display of red dahlia, glittering willows, and green strobes. Perfect for finales!",
+    "price": 1592,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490787/Fireworks/Commander-_-Chief_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=JU6zY4W8DOw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green"],
+    "effects": ["dahlia", "willow", "strobe"],
+    "numShots": 26
+  },
+  {
+    "_id": 9,
+    "categoryId": 1,
+    "title": "Cousin Eddie",
+    "description":
+    "2\" red wave followed by glitter and multi-colored peonies.",
+    "price": 1749,
+    "numInStock": 6,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490787/Fireworks/Cousin-Eddie_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=wtLLUVJCWPs",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 40,
+    "colors": ["red", "green", "white", "blue"],
+    "effects": ["glitter", "peony"],
+    "numShots": 9
+  },
+  {
+    "_id": 10,
+    "categoryId": 1,
+    "title": "Dr. Loud",
+    "description":
+    "Huge bursts of palms, pistils, and glitter!",
+    "price": 1649,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490786/Fireworks/Dr_Loud_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=BL_omUtnbsM",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "white", "purple", "green"],
+    "effects": ["glitter", "palm", "pistil", "time rain"],
+    "numShots": 9
+  },
+  {
+    "_id": 11,
+    "categoryId": 1,
+    "title": "Dragon's Claw",
+    "description":
+    "3-shell waves of beautiful brocades, ending in a titanium willow rain.",
+    "price": 1398,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490786/Fireworks/dragons-claw_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=gKPY__L_Rxo",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 25,
+    "colors": ["white", "red", "green", "blue"],
+    "effects": ["glitter", "willow"],
+    "numShots": 15
+  },
+  {
+    "_id": 12,
+    "categoryId": 1,
+    "title": "Fort Knox",
+    "description":
+    "Gold glittering comets to large willows with strobes/crackles. Very beautiful!",
+    "price": 1250,
+    "numInStock": 12,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490785/Fireworks/Fort-Knox_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=VCE7UgSi2fE",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 50,
+    "colors": ["gold", "white"],
+    "effects": ["comet", "willow", "strobe"],
+    "numShots": 16
+  },
+  {
+    "_id": 13,
+    "categoryId": 1,
+    "title": "Golden Boy",
+    "description":
+    "Gold glittering tails rise up to a brocade crown and blue crackle, ending with a 4 shot finale.",
+    "price": 1499,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490785/Fireworks/Golden-Boy_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Ze6IA-ETGgM",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 45,
+    "colors": ["gold", "blue"],
+    "effects": ["glitter", "brocade", "strobe"],
+    "numShots": 16
+  },
+  {
+    "_id": 14,
+    "categoryId": 1,
+    "title": "Heat Wave",
+    "description":
+    "12 shots with extremely big breaks and crackling color. Very loud!",
+    "price": 1000,
+    "numInStock": 16,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490784/Fireworks/Heatwave_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=InjJ0y0_eIk",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 25,
+    "colors": ["red", "green", "purple"],
+    "effects": ["chrysanthemum"],
+    "numShots": 12
+  },
+  {
+    "_id": 15,
+    "categoryId": 1,
+    "title": "Hercules",
+    "description":
+    "Silver time rain with colored peonies. 2 shot finale.",
+    "price": 616,
+    "numInStock": 24,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490783/Fireworks/Hercules_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://youtu.be/IbuS4MS2zXY",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green"],
+    "effects": ["time rain", "peony"],
+    "numShots": 8
+  },
+  {
+    "_id": 16,
+    "categoryId": 1,
+    "title": "King Neon",
+    "description":
+    "Beautiful neon breaks in a stunning array of color!",
+    "price": 1974,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490783/Fireworks/King-Neon_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=h_9R43XmjAQ",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["blue", "yellow", "purple", "green"],
+    "effects": ["peony"],
+    "numShots": 9
+  },
+  {
+    "_id": 17,
+    "categoryId": 1,
+    "title": "Lightning Storm",
+    "description":
+    "12 shots of blue tails rising up to gold willow, brocade crown and silver. Ends with 3 shots together.",
+    "price": 1000,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490782/Fireworks/Lightning-Storm_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=D9npEhNVgA0",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["blue", "gold", "silver"],
+    "effects": ["willow", "brocade", "chrysanthemum"],
+    "numShots": 12
+  },
+  {
+    "_id": 18,
+    "categoryId": 1,
+    "title": "Mean Farmer",
+    "description":
+    "Beautiful strobes with mixed colors ending in an 8 shot finale.",
+    "price": 1250,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490782/Fireworks/Mean-Farmer_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=nLHxWUViYjw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 40,
+    "colors": ["red", "green", "gold", "blue"],
+    "effects": ["strobe", "willow"],
+    "numShots": 16
+  },
+  {
+    "_id": 19,
+    "categoryId": 1,
+    "title": "Selfie",
+    "description":
+    "Gold palms with colorful stars followed by 2 huge shots of chrysanthemums and palms.",
+    "price": 1749,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490782/Fireworks/Selfie_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=wzW6mqaJ3Zw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 25,
+    "colors": ["gold", "silver"],
+    "effects": ["palm", "chrysanthemum"],
+    "numShots": 25
+  },
+  {
+    "_id": 20,
+    "categoryId": 1,
+    "title": "Tokyo Time Bomb",
+    "description":
+    "Blow your friends and family away with this beautiful multi-colored display!",
+    "price": 1749,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490780/Fireworks/ff4026_tokyo_time_bomb_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=6djRScIhEyw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 40,
+    "colors": ["red", "green", "purple"],
+    "effects": ["palm", "pistil"],
+    "numShots": 9
+  },
+  {
+    "_id": 21,
+    "categoryId": 1,
+    "title": "Unstoppable",
+    "description":
+    "A variety of effects/color ending in a 3-shot burst.",
+    "price": 2174,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490780/Fireworks/unstoppable_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=R6bHwr2r9GE",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 35,
+    "colors": ["gold", "red", "blue"],
+    "effects": ["coconut", "glitter", "willow", "pistil", "brocade"],
+    "numShots": 9
+  },
+  {
+    "_id": 22,
+    "categoryId": 1,
+    "title": "Wicked Willows",
+    "description":
+    "Big beautiful golden willows.  All willows that hang in the sky!",
+    "price": 1999,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490780/Fireworks/wicked-willow_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=f9D2iTDpq9w",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 50,
+    "colors": ["gold", "red"],
+    "effects": ["willow"],
+    "numShots": 16
+  },
+  {
+    "_id": 23,
+    "categoryId": 1,
+    "title": "Professional 3\" Rack",
+    "description":
+    "Nine huge bursts that will blow your socks off!",
+    "price": 3948,
+    "numInStock": 7,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490780/Fireworks/3rackred_876c2005-7dfe-4f10-acd7-fdb32760b127_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=EFFPwy1eNfc",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["white", "green"],
+    "effects": ["brocade", "glitter", "chrysanthemum"],
+    "numShots": 9
+  },
+  {
+    "_id": 24,
+    "categoryId": 1,
+    "title": "Right to Bare Arms",
+    "description":
+    "Exercise your rights with this huge display of force!",
+    "price": 3500,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490778/Fireworks/Right-to-Bare-Arms_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Vx6KJkdkupA",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 45,
+    "colors": ["red", "blue", "green", "gold"],
+    "effects": ["brocade", "dahlia", "strobe", "willow"],
+    "numShots": 9
+  },
+  {
+    "_id": 25,
+    "categoryId": 1,
+    "title": "Roid Rage",
+    "description":
+    "Giant perfect flowers unlike any you have seen before! This is a musthave cake.",
+    "price": 4098,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490778/Fireworks/Roid-Rage_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=wJFbmrC0hP0",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["gold", "red", "green"],
+    "effects": ["brocade"],
+    "numShots": 9
+  },
+  {
+    "_id": 26,
+    "categoryId": 1,
+    "title": "Wall Street",
+    "description":
+    "3\" shells opening with huge gold brocade palms, with silver strobes and blue stars. Looks like a million bucks!",
+    "price": 4158,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490778/Fireworks/wall_street_ff-1505_fe95f7d2-7d6c-4379-9c2e-c1f79921d304_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=6ytz2C7YKLM",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 25,
+    "colors": ["gold", "blue"],
+    "effects": ["brocade", "strobe", "stars"],
+    "numShots": 9
+  },
+  {
+    "_id": 27,
+    "categoryId": 1,
+    "title": "Chicken Dance",
+    "description":
+    "Unique colors of brocade crowns with crackle.",
+    "price": 366,
+    "numInStock": 6,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490777/Fireworks/Chicken-Dance_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=r2qFaHUJJT8",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["gold"],
+    "effects": ["brocade", "crackle"],
+    "numShots": 16
+  },
+  {
+    "_id": 28,
+    "categoryId": 1,
+    "title": "Crackle Jack",
+    "description":
+    "A unique display of color tales to crackling willows with color tips.",
+    "price": 499,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490776/Fireworks/Crackle-Jack_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=aWkyEGWTT8E",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green", "gold", "blue"],
+    "effects": ["willow", "crackle"],
+    "numShots": 16
+  },
+  {
+    "_id": 29,
+    "categoryId": 1,
+    "title": "Gizmo",
+    "description":
+    "A great addition to anyone looking to add variety to their display!",
+    "price": 500,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490775/Fireworks/FF1133-GIZMO_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=UmcbNHASxU8",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 25,
+    "colors": ["blue", "silver", "red", "green"],
+    "effects": ["brocade", "strobe"],
+    "numShots": 16
+  },
+  {
+    "_id": 30,
+    "categoryId": 1,
+    "title": "Glory Daze",
+    "description":
+    "A trippy display of color and effects!",
+    "price": 475,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490775/Fireworks/glory-daze_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=DLYbjWaaIS4",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 15,
+    "colors": ["gold", "red", "blue"],
+    "effects": ["strobe", "brocade"],
+    "numShots": 18
+  },
+  {
+    "_id": 31,
+    "categoryId": 1,
+    "title": "Jungle Fever",
+    "description":
+    "Miniature zipper cake with multicolored pearls.  Rapid pace.",
+    "price": 719,
+    "numInStock": 21,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490775/Fireworks/junglefever.png",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://youtu.be/VtyJZ3TC5Lk",
+    "manufacturer": "Firehawk",
+    "duration": 25,
+    "colors": ["red", "green", "gold"],
+    "effects": ["pearls", "willow", "glitter"],
+    "numShots": 96
+  },
+  {
+    "_id": 32,
+    "categoryId": 1,
+    "title": "Piece of Mine",
+    "description":
+    "This is a great strobe cake that has rows of red, green, blue, and white strobes with crackling mines.",
+    "price": 500,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490774/Fireworks/Piece-of-Mine_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=ckrkFVlusdo",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 20,
+    "colors": ["red", "green", "blue"],
+    "effects": ["strobe"],
+    "numShots": 25
+  },
+  {
+    "_id": 33,
+    "categoryId": 1,
+    "title": "Shark Frenzy",
+    "description":
+    "Alternating shots of tails/spinners with beautiful color. Clear the water!",
+    "price": 461,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490774/Fireworks/Shark-Frenzy-new_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=M0y7XYHr0Zc",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 25,
+    "colors": ["red", "blue", "silver"],
+    "effects": ["spinner", "stars"],
+    "numShots": 25
+  },
+  {
+    "_id": 34,
+    "categoryId": 1,
+    "title": "The Sizzler",
+    "description":
+    "A very loud, long lasting crackling cake with great comets.",
+    "price": 458,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490773/Fireworks/The-Sizzler_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=9sIRS5110eU",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 40,
+    "colors": ["gold"],
+    "effects": ["comet", "crackle"],
+    "numShots": 25
+  },
+  {
+    "_id": 35,
+    "categoryId": 3,
+    "title": "4\" Ice Fountain",
+    "description":
+    "4\" of sparking power. A great addition to any celebration!",
+    "price": 44,
+    "numInStock": 90,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490772/Fireworks/ss-1115-4ft-ice-fountain-web_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=MLP-wXTFAQQ",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 40,
+    "colors": [""],
+    "effects": ["sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 36,
+    "categoryId": 3,
+    "title": "Assorted Cone Fountain",
+    "description":
+    "An incredible 1-foot tall fountain that is fun for all ages.",
+    "price": 105,
+    "numInStock": 108,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490772/Fireworks/8-Assorted-Cone-Fountain_c9b07528-a251-4dc7-a7ca-54aabae24a0d_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=h2hRn96lnlk",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 20,
+    "colors": [""],
+    "effects": ["sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 37,
+    "categoryId": 3,
+    "title": "Captain Crackle",
+    "description":
+    "A dazzling display of blue and red sizzling sparks, ending in a crackle!",
+    "price": 422,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490771/Fireworks/FF1138-CAPTAIN-CRACKLE_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=dF6Mn-RXx8A",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 60,
+    "colors": ["red", "gold", "blue", "yellow"],
+    "effects": ["laser", "crackle"],
+    "numShots": 1
+  },
+  {
+    "_id": 38,
+    "categoryId": 5,
+    "title": "Crackling Barrels",
+    "description":
+    "3 individual barrels that crackle almost 2 minutes a piece",
+    "price": 110,
+    "numInStock": 18,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490771/Fireworks/crackling_barrels_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=_eODrwW-G2o",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 120,
+    "colors": [""],
+    "effects": ["crackle"],
+    "numShots": 3
+  },
+  {
+    "_id": 39,
+    "categoryId": 3,
+    "title": "Hangover Fountain",
+    "description":
+    "You'll feel like you've got a hangover after this boisterous fountain with loud gold crackling mixed well with red and green sparks.",
+    "price": 210,
+    "numInStock": 10,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490770/Fireworks/Hangover-Fountain_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=yrNurol-p-I",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 50,
+    "colors": ["gold", "red", "green"],
+    "effects": ["crackle", "sparks", "chrysanthemum"],
+    "numShots": 1
+  },
+  {
+    "_id": 40,
+    "categoryId": 3,
+    "title": "Punkin Chunkin",
+    "description":
+    "This unique pumpkin fountain last over 70 seconds with varying effects with a surprise ending of glowing eyes and mouth.",
+    "price": 517,
+    "numInStock": 15,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490769/Fireworks/punkin_chunkin_fountain_fc534249-f87e-45d1-a18a-32fbdaf679a5_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=596QnOcn_HI",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 75,
+    "colors": ["green", "gold", "red"],
+    "effects": ["sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 41,
+    "categoryId": 5,
+    "title": "Sword Fountain",
+    "description":
+    "A handheld fountain shaped like a sword!",
+    "price": 143,
+    "numInStock": 90,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490769/Fireworks/ff4058-sword-fountain-web_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=BiZai_wLlkI",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 45,
+    "colors": ["red", "blue", "gold"],
+    "effects": ["smoke", "sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 42,
+    "categoryId": 4,
+    "title": "Neon Viper",
+    "description":
+    "Six assorted bright neon 60 gram shells. Nice color and huge breaks!",
+    "price": 983,
+    "numInStock": 18,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490768/Fireworks/ff1102_neon_viper_shell-3d_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Hz8HHasplhc",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["red", "green", "purple", "orange", "yellow", "pink"],
+    "effects": ["strobe", "pistil", "peony"],
+    "numShots": 6
+  },
+  {
+    "_id": 43,
+    "categoryId": 4,
+    "title": "Viper Artillery Shells",
+    "description":
+    "24 shots of the best 60 gram shells on the market. Comes with 4 fiberglass tubes. HUGE breaks, very loud.",
+    "price": 3238,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490768/Fireworks/Viper-Shell_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=iC_KNbeya50",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 120,
+    "colors": ["green", "red", "gold"],
+    "effects": ["strobe", "pistil", "chrysanthemum"],
+    "numShots": 24
+  },
+  {
+    "_id": 44,
+    "categoryId": 6,
+    "title": "Black Cat 1.5\" Firecrackers",
+    "description":
+    "100pk of 1.5\" firecrackers.",
+    "price": 50,
+    "numInStock": 160,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490767/Fireworks/blackcat1.5.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 2,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 100
+  },
+  {
+    "_id": 45,
+    "categoryId": 6,
+    "title": "Thunderbomb Firecrackers - 2000 roll",
+    "description":
+    "2000 count roll of 1.5\" firecrackers",
+    "price": 556,
+    "numInStock": 4,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490766/Fireworks/FF4021-FIRECRACKER_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 60,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 2000
+  },
+  {
+    "_id": 46,
+    "categoryId": 6,
+    "title": "Thunderbomb Firecrackers - 50 strip",
+    "description":
+    "50-piece strip of 1.5\" firecrackers",
+    "price": 50,
+    "numInStock": 80,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490766/Fireworks/thunderbomb_50_7955a5c1-7cdf-4f99-9590-ac4cc81d8f10_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 15,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 50
+  },
+  {
+    "_id": 47,
+    "categoryId": 6,
+    "title": "Thunderbomb Firecrackers - 100 strip",
+    "description":
+    "100-piece gold foil strip of 1.75\" firecrackers",
+    "price": 30,
+    "numInStock": 80,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490766/Fireworks/thunderbomb100.png",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 100
+  },
+  {
+    "_id": 48,
+    "categoryId": 7,
+    "title": "25 Shot Saturn Missile",
+    "description":
+    "25 shots of shrieking loud missiles!",
+    "price": 50,
+    "numInStock": 90,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490765/Fireworks/25shotsaturnmisslesingle_8167b541-b665-40ec-903a-e6f471d50b67_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=CXPtcr383NQ",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 20,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 25
+  },
+  {
+    "_id": 49,
+    "categoryId": 5,
+    "title": "Army Parachute",
+    "description":
+    "Single shot tube loaded with a large parachute and movable action figure. Great daytime item with a souvenir!",
+    "price": 239,
+    "numInStock": 45,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490765/Fireworks/army_parachute_c9bc07a0-dab8-44d5-b83b-df464c59d99f_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=DGfVYU5nrDw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 45,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 50,
+    "categoryId": 5,
+    "title": "Giant Parachute",
+    "description":
+    "40\" giant daytime parachute that shoots so high, it'll keep the kids looking to the sky.",
+    "price": 87,
+    "numInStock": 60,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490764/Fireworks/giant_parachute_40_0de46e46-d7b0-44d1-b49f-bb1f52ab8f7c_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=WJgcoplt8eA",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 45,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 51,
+    "categoryId": 5,
+    "title": "Gatling Candle",
+    "description":
+    "140 shots of assorted color pearls with loud bangs. Sounds like a gatling gun!",
+    "price": 582,
+    "numInStock": 3,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490764/Fireworks/ff4030_gatling_candle_93cb741e-a8cc-4682-8d83-86dbf3a08091_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=rYLIB2S7sY4",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": ["green", "red"],
+    "effects": ["pearls"],
+    "numShots": 140
+  },
+  {
+    "_id": 52,
+    "categoryId": 5,
+    "title": "Ground Bloom Flower",
+    "description":
+    "Classic multicolored ground flower!",
+    "price": 20,
+    "numInStock": 780,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490763/Fireworks/ground_bloom_flowers_pack_1f93a90e-90cc-4295-bde7-f8f5f7566301_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=t1kLgainnmU",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 15,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 53,
+    "categoryId": 5,
+    "title": "Mission to Mars Spaceship",
+    "description":
+    "A nice wide spray of silver sparks as this ethereal ship takes off into outerspace!",
+    "price": 129,
+    "numInStock": 72,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490763/Fireworks/Mission-to-Mars-Spaceship_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 20,
+    "colors": [""],
+    "effects": ["sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 54,
+    "categoryId": 5,
+    "title": "Small Bees",
+    "description":
+    "Small helicopter bees that look red on takeoff. Great for kids to enjoy!",
+    "price": 23,
+    "numInStock": 60,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490762/Fireworks/Small-Bee_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 10,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 55,
+    "categoryId": 5,
+    "title": "Zippers",
+    "description":
+    "These little guys spin high into the sky at lightning speed!",
+    "price": 35,
+    "numInStock": 40,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490762/Fireworks/zipperssingle_657122c7-f648-468f-8af2-323b22adb539_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 10,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 56,
+    "categoryId": 5,
+    "title": "Sky Lantern",
+    "description":
+    "Perfect time filler that everyone can enjoy as it rises higher and higher in the sky.",
+    "price": 100,
+    "numInStock": 99,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490761/Fireworks/skylantern_flag_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=VreA6bYto3o",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 600,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 57,
+    "categoryId": 5,
+    "title": "Crackling Balls",
+    "description":
+    "6 loud golden crackling balls.",
+    "price": 21,
+    "numInStock": 144,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490760/Fireworks/crackling_balls_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Jq6iE8O4xkw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 10,
+    "colors": [""],
+    "effects": ["crackle"],
+    "numShots": 6
+  },
+  {
+    "_id": 58,
+    "categoryId": 5,
+    "title": "Large Happy Lamp",
+    "description":
+    "Spins into showers of sparks, then opens into a lamp.",
+    "price": 124,
+    "numInStock": 18,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490760/Fireworks/Large-Happy-Lamp_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=PbmFLR-XrTE",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": [""],
+    "effects": ["sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 59,
+    "categoryId": 5,
+    "title": "Party Popper",
+    "description":
+    "A great little item that can add loads of fun to any get-together!",
+    "price": 37,
+    "numInStock": 360,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490760/Fireworks/Party-Popper_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 1,
+    "colors": [""],
+    "effects": ["confetti"],
+    "numShots": 6
+  },
+  {
+    "_id": 60,
+    "categoryId": 5,
+    "title": "Police Car",
+    "description":
+    "Police car that emits a loud siren and rolls on the ground while shooting sparks.",
+    "price": 167,
+    "numInStock": 18,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490758/Fireworks/FF4042-police-car_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 30,
+    "colors": [""],
+    "effects": ["sparks"],
+    "numShots": 1
+  },
+  {
+    "_id": 61,
+    "categoryId": 1,
+    "title": "Day Dreamer",
+    "description":
+    "Great daytime smoke cake that includes crackle. Very unique item!",
+    "price": 2372,
+    "numInStock": 2,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490757/Fireworks/Day-Dreamer_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Bo5A_Wf3Ki0",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 40,
+    "colors": ["red", "green", "blue"],
+    "effects": ["smoke", "dahlia", "crackle"],
+    "numShots": 36
+  },
+  {
+    "_id": 62,
+    "categoryId": 5,
+    "title": "Military Smoke Can",
+    "description":
+    "Bright orange smoke, high quality metal can. Very dense smoke.",
+    "price": 333,
+    "numInStock": 9,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490757/Fireworks/military-smoke-can-A_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=4690rTux0kk",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 45,
+    "colors": [""],
+    "effects": ["smoke"],
+    "numShots": 1
+  },
+  {
+    "_id": 63,
+    "categoryId": 5,
+    "title": "Pullstring Grenade",
+    "description":
+    "No fire required to ignite! Just pull the string and throw it, while a TON of smoke billows out!",
+    "price": 94,
+    "numInStock": 24,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490757/Fireworks/pull_string_grenade_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=Qa4xWRh5Ygw",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 60,
+    "colors": [""],
+    "effects": ["smoke"],
+    "numShots": 1
+  },
+  {
+    "_id": 64,
+    "categoryId": 5,
+    "title": "Moon Traveller Bottle Rocket",
+    "description":
+    "The all-time, high-flying favorite! Comes in pack of 12.",
+    "price": 200,
+    "numInStock": 6,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490757/Fireworks/moon_travler_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=LM5jQB0kBjI",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 5,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 12
+  },
+  {
+    "_id": 65,
+    "categoryId": 5,
+    "title": "Fun pack",
+    "description":
+    "Small assortment bag with fun items for kids to enjoy!",
+    "price": 382,
+    "numInStock": 30,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490757/Fireworks/FF4060-Fun-Pack_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 15,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 1
+  },
+  {
+    "_id": 66,
+    "categoryId": 5,
+    "title": "10\" Punk Sticks",
+    "description":
+    "100 pack of punk sticks. Don't fumble around for a lighter this season!",
+    "price": 300,
+    "numInStock": 20000,
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dofldoy7t/image/upload/v1537490757/Fireworks/punk_100_eac71a4e-7399-44e9-a25f-1c46d5f4ca65_grande.jpg",
+        "alt": ""
+      } 
+    ],
+    "videoUrl": "",
+    "manufacturer": "Flashing Fireworks",
+    "duration": 300,
+    "colors": [""],
+    "effects": [""],
+    "numShots": 100
   }
 ]

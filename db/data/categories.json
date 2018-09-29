@@ -6,13 +6,13 @@
   },
   {
     "_id": 2,
-    "singularName": "500g repeater case",
-    "pluralName": "500g repeater cases"
+    "singularName": "girandola",
+    "pluralName": "girandolas"
   },
   {
     "_id": 3,
-    "singularName": "200g repeater case",
-    "pluralName": "200g repeater cases"
+    "singularName": "fountain",
+    "pluralName": "fountains"
   },
   {
     "_id": 4,
@@ -21,12 +21,17 @@
   },
   {
     "_id": 5,
-    "singularName": "assorted small item",
-    "pluralName": "assorted small items"
+    "singularName": "novelty/display item",
+    "pluralName": "novelty/display items"
   },
   {
     "_id": 6,
-    "singularName": "reloadable shell kit",
-    "pluralName": "reloadable shell kits"
+    "singularName": "firecrackers",
+    "pluralName": "firecrackers"
+  },
+  {
+    "_id": 7,
+    "singularName": "missile",
+    "pluralName": "missiles"
   }
 ]
